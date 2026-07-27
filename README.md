@@ -1,3 +1,4 @@
+HEAD
 # LeadFlow — Lead Management Platform
 
 A lightweight CRM for managing inbound leads: public capture form, role-based pipeline management, assignment, notes, and a full activity timeline. Built as a full-stack assessment project with production-oriented architecture (layered backend, JWT auth, validation, tests, and a responsive React dashboard).
@@ -297,3 +298,50 @@ Enforced identically on the frontend (hiding actions) and backend (rejecting req
 - **Zod for validation**: schema-based validation that is declarative, composable, and gives the frontend and backend the same source of truth for what "valid" looks like.
 - **Member-scoping enforced in the service layer**, not just the route layer, so it's impossible to bypass by hitting the same endpoint with different query params.
 - **Rate limiting tuned per surface**: a strict limiter on the public capture form (spam-prone, no auth), a moderate one on auth endpoints (brute-force mitigation), and a general one across the rest of the API.
+=======
+# Lead Management Platform
+
+A full-stack Lead Management Platform built with React, Node.js, Express.js, and MongoDB Atlas. The application enables secure user authentication, role-based access control, lead management (CRUD), dashboard analytics, and user management through a modern, responsive interface.
+
+## Features
+
+- User Registration & Login
+- JWT Authentication
+- Role-Based Access Control (Admin & Member)
+- Lead Management (Create, Read, Update, Delete)
+- Dashboard Analytics
+- User Management
+- MongoDB Atlas Integration
+- RESTful API
+- Responsive UI
+
+## Tech Stack
+
+### Frontend
+- React
+- Vite
+- JavaScript
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
+- JWT Authentication
+- bcrypt
+
+## Installation
+
+```bash
+git clone https://github.com/syedsirajuddinzain/lead-management-platform.git
+cd lead-management-platform
+```
+
+Install dependencies for both the frontend and backend, configure the `.env` file, and start the development servers.
+
+## Author
+
+**Syed Sirajuddin Zain**
+
+GitHub: https://github.com/syedsirajuddinzain 6542ea352de8d7545805442e45b7414e0bac14e7
